@@ -20,25 +20,50 @@ public class SimpleAI : MonoBehaviour {
 
 
     private Transform playerTarget;
-
     private Vector3 currentDestination;
-
     private bool playerSeen;
     private int maxNumberOfNewDestinationBeforeDeath;
-    private enum State {Wandering, Chasing};
+    private NavMeshAgent navMeshAgent;
+    private Animator animator;
+    private GameObject player;
+    
+    private enum State { Wandering, Chasing };
     private State currentState;
 
-    // Use this for initialization
-    void Start () {
+    private void Start()
+    {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player");
+
         currentDestination = RandomNavSphere(transform.position, patrolRadius, -1);
         maxNumberOfNewDestinationBeforeDeath = Random.Range(5, 50);
     }
 
+    private void Update()
+    {
+        CheckState();
+
+        if (playerSeen)
+        {
+            currentState = State.Chasing;
+        }
+        else
+        {
+            currentState = State.Wandering;
+        }
+
+        if (HasFoundPlayer())
+        {
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+    
     private void CheckState()
     {
         FindVisibleTargets();
 
-        switch(currentState)
+        switch (currentState)
         {
             case State.Chasing:
                 ChaseBehavior();
@@ -47,38 +72,35 @@ public class SimpleAI : MonoBehaviour {
             default:
                 WanderBehavior();
                 break;
-
         }
     }
 
-    void WanderBehavior()
+    private void WanderBehavior()
     {
-        GetComponentInChildren<Animator>().SetTrigger("walk");
-        GetComponent<NavMeshAgent>().speed = walkSpeed;
+        animator.SetTrigger("walk");
+        navMeshAgent.speed = walkSpeed;
+        float dist = navMeshAgent.remainingDistance;
 
-        float dist = GetComponent<NavMeshAgent>().remainingDistance;
-
-        if (dist != Mathf.Infinity && GetComponent<NavMeshAgent>().pathStatus == NavMeshPathStatus.PathComplete)
+        if (dist != Mathf.Infinity && navMeshAgent.pathStatus == NavMeshPathStatus.PathComplete)
         {
             currentDestination = RandomNavSphere(transform.position, patrolRadius, -1);
-            GetComponent<NavMeshAgent>().SetDestination(currentDestination);
+            navMeshAgent.SetDestination(currentDestination);
             maxNumberOfNewDestinationBeforeDeath--;
             if (maxNumberOfNewDestinationBeforeDeath <= 0)
             {
                 Destroy(gameObject);
             }
         }
-
     }
 
-    void ChaseBehavior()
+    private void ChaseBehavior()
     {
         if (playerTarget != null)
         {
-            GetComponentInChildren<Animator>().SetTrigger("run");
-            GetComponent<NavMeshAgent>().speed = runSpeed;
+            animator.SetTrigger("run");
+            navMeshAgent.speed = runSpeed;
             currentDestination = playerTarget.transform.position;
-            GetComponent<NavMeshAgent>().SetDestination(currentDestination);
+            navMeshAgent.SetDestination(currentDestination);
         }
         else
         {
@@ -110,7 +132,7 @@ public class SimpleAI : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Found Player");
+            //Debug.Log("Found Player");
         }
 
         foreach (GameObject player in players)
@@ -160,48 +182,14 @@ public class SimpleAI : MonoBehaviour {
 
     #endregion
 
-    private bool HasFindPlayer()
+    private bool HasFoundPlayer()
     {
-        bool result = false;
-        
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-
-        if (players.Length == 0)
+        if (player == null)
         {
-            return result;
-        }
-        else
-        {
-            Debug.Log("Found Player");
+            return false;
         }
 
-        
-        foreach (GameObject player in players)
-        {
-            if (Vector3.Distance(player.transform.position, transform.position) <= GetComponent<NavMeshAgent>().radius*2)
-            {
-                result = true;
-            }
-        }
-
-        return result;
+        return Vector3.Distance(player.transform.position, transform.position) <= navMeshAgent.radius * 2;
     }
-    
-    // Update is called once per frame
-    void Update () {
-        CheckState();
 
-        if (playerSeen)
-        {
-            currentState = State.Chasing;
-        } else
-        {
-            currentState = State.Wandering;
-        }
-
-        if (HasFindPlayer())
-        {
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        }
-	}
 }

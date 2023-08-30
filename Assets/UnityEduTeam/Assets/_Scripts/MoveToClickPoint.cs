@@ -4,53 +4,43 @@ using UnityEngine.AI;
 public class MoveToClickPoint : MonoBehaviour
 {
 
+    private NavMeshAgent _navAgent;
+    private Animator _animator;
+    private RaycastHit _hit;
+    private Vector3 _destination;
+    void Awake()
+    {
+        _navAgent = GetComponent<NavMeshAgent>();
+        _animator = GetComponentInChildren<Animator>();
+
+        if (_navAgent == null || _animator == null)
+        {
+            Debug.LogError("composant non trouvé!");
+        }
+    }
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
-
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out _hit, 100))
             {
-                // si le click souris à donné une position acceptable on met à jour la destination de l'agent
-                // après avoir vérifier que l'on a bien un navmeshagent sur le gameobject pour éviter une nullreferenceexeption
-                // on oublie pas de prévenir 'intégrateur pour ses tests
-                if (GetComponent<NavMeshAgent>() != null)
-                {
-                    GetComponent<NavMeshAgent>().destination = hit.point;
-                    GetComponent<NavMeshAgent>().isStopped = false;
-                    Debug.Log("Player destination have been changed !");
-
-                }
-
+                _destination = _hit.point;
+                _navAgent.destination = _destination;
+                _navAgent.isStopped = false;
             }
         }
 
         //on vérifie si le player est arrivé à destination
-        if (Vector3.Distance(transform.position , GetComponent<NavMeshAgent>().destination) < 0.1f)
+        if ((transform.position - _navAgent.destination).sqrMagnitude < 0.01f)
         {
-            // toujours la vérif de la présence du component pour éviter la nullreference
-            if (GetComponent<NavMeshAgent>() != null)
-            {
-                GetComponent<NavMeshAgent>().isStopped = true;
-                Debug.Log("Player reach is destination !");
-            }
+            _navAgent.isStopped = true;
         }
 
         //on met à jour l'animation en fonction de la vitesse de l'agent
         //après avoir vérifier que le component est bien là pour éviter la nullreference
-        if (GetComponent<NavMeshAgent>() != null && GetComponent<NavMeshAgent>().velocity.magnitude > .1f)
-        {
-            GetComponentInChildren<Animator>().SetBool("running", true);
-            Debug.Log("start walking");
-        }
-        else
-        {
-            GetComponentInChildren<Animator>().SetBool("running", false);
-            Debug.Log("start running");
-
-        }
+        bool isMoving = _navAgent.velocity.sqrMagnitude > 0.01f;
+        _animator.SetBool("running", isMoving);
 
     }
 }
-
