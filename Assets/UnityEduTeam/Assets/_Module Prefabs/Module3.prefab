@@ -14,7 +14,7 @@ GameObject:
   m_TagString: MazeModule
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4961866385323184
 Transform:
@@ -119,6 +119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface455 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 504124478168374399, guid: ae16ba3f8aa51ef418e5b336d0be5914, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae16ba3f8aa51ef418e5b336d0be5914, type: 3}
 --- !u!4 &4506432022072566 stripped
@@ -136,6 +140,10 @@ PrefabInstance:
     - target: {fileID: 805473021416784455, guid: b38777bac1b02ac4a81e78d4eaeaf14c, type: 3}
       propertyPath: m_Name
       value: polySurface454 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 805473021416784455, guid: b38777bac1b02ac4a81e78d4eaeaf14c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 808725308992521973, guid: b38777bac1b02ac4a81e78d4eaeaf14c, type: 3}
       propertyPath: m_RootOrder
@@ -199,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface454 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1056418715937911002, guid: de06fe008f7aeba47a15f5e5ca6a7684, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1061979582100337724, guid: de06fe008f7aeba47a15f5e5ca6a7684, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -260,6 +272,10 @@ PrefabInstance:
     - target: {fileID: 1134992175186583213, guid: cb506e80b3dd43a47b7ee4e618dc04a2, type: 3}
       propertyPath: m_Name
       value: polySurface477 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134992175186583213, guid: cb506e80b3dd43a47b7ee4e618dc04a2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1137352622998173485, guid: cb506e80b3dd43a47b7ee4e618dc04a2, type: 3}
       propertyPath: m_RootOrder
@@ -375,9 +391,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4582791446301588387, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
       propertyPath: m_Name
       value: FireCan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583026667855944793, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
@@ -440,6 +468,10 @@ PrefabInstance:
     - target: {fileID: 1499632531737606422, guid: 5155177f8cc86f146bc6a0f9b32c6dfb, type: 3}
       propertyPath: m_Name
       value: polySurface473 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499632531737606422, guid: 5155177f8cc86f146bc6a0f9b32c6dfb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5155177f8cc86f146bc6a0f9b32c6dfb, type: 3}
@@ -577,6 +609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface454 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1774365084673419573, guid: 3c2bd1d0b32eb954c946aeabd5033e18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c2bd1d0b32eb954c946aeabd5033e18, type: 3}
 --- !u!4 &4961710682362134 stripped
@@ -638,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 2250245470182344651, guid: 18a1636e55460204089570eb005f6c11, type: 3}
       propertyPath: m_Name
       value: polySurface472 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250245470182344651, guid: 18a1636e55460204089570eb005f6c11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a1636e55460204089570eb005f6c11, type: 3}
@@ -701,6 +741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface455 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2358872947432749169, guid: 3559a833eed31da42af63e62018f2da4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3559a833eed31da42af63e62018f2da4, type: 3}
 --- !u!4 &4916569961185634 stripped
@@ -763,6 +807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface455 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2824482235216215048, guid: 22243ddcdd4bb654d8cda498ad4d45ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22243ddcdd4bb654d8cda498ad4d45ed, type: 3}
 --- !u!4 &4623699699841686 stripped
@@ -780,6 +828,10 @@ PrefabInstance:
     - target: {fileID: 2956883898230596041, guid: 9a50b5a50193b474987308c263879917, type: 3}
       propertyPath: m_Name
       value: polySurface475 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956883898230596041, guid: 9a50b5a50193b474987308c263879917, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2962430926739332661, guid: 9a50b5a50193b474987308c263879917, type: 3}
       propertyPath: m_RootOrder
@@ -842,6 +894,10 @@ PrefabInstance:
     - target: {fileID: 3226899997149773852, guid: c9da5b52465614b4894192ccf94babe0, type: 3}
       propertyPath: m_Name
       value: polySurface455 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226899997149773852, guid: c9da5b52465614b4894192ccf94babe0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3233161152091327786, guid: c9da5b52465614b4894192ccf94babe0, type: 3}
       propertyPath: m_RootOrder
@@ -979,6 +1035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface476 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3563855895321627790, guid: 51141e7571fd26343961952f35aa264b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3566130882334814972, guid: 51141e7571fd26343961952f35aa264b, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1040,6 +1100,10 @@ PrefabInstance:
     - target: {fileID: 3623473998429583591, guid: c8aaddc1ffce29a458840838cd5e9f23, type: 3}
       propertyPath: m_Name
       value: polySurface176 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623473998429583591, guid: c8aaddc1ffce29a458840838cd5e9f23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3628898987467042149, guid: c8aaddc1ffce29a458840838cd5e9f23, type: 3}
       propertyPath: m_RootOrder
@@ -1146,6 +1210,10 @@ PrefabInstance:
     - target: {fileID: 3671234659568225617, guid: 6d57d2549c3a6fc47b079f8f39568e98, type: 3}
       propertyPath: m_Name
       value: polySurface455 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3671234659568225617, guid: 6d57d2549c3a6fc47b079f8f39568e98, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d57d2549c3a6fc47b079f8f39568e98, type: 3}
@@ -1283,6 +1351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface454 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3772687262996839786, guid: 95bab6e121c6bce4b93dafb4df788aff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95bab6e121c6bce4b93dafb4df788aff, type: 3}
 --- !u!4 &4512545407219418 stripped
@@ -1344,6 +1416,10 @@ PrefabInstance:
     - target: {fileID: 3925480878531400642, guid: 895d26adbd42750439da6d539ac9cd8b, type: 3}
       propertyPath: m_Name
       value: polySurface455 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925480878531400642, guid: 895d26adbd42750439da6d539ac9cd8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895d26adbd42750439da6d539ac9cd8b, type: 3}
@@ -1436,6 +1512,10 @@ PrefabInstance:
     - target: {fileID: 4153197412087973766, guid: 4be1ab5799a797a4fa8bc36af266f875, type: 3}
       propertyPath: m_Name
       value: polySurface455 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153197412087973766, guid: 4be1ab5799a797a4fa8bc36af266f875, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4158480758547295588, guid: 4be1ab5799a797a4fa8bc36af266f875, type: 3}
       propertyPath: m_RootOrder
@@ -1539,9 +1619,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4582791446301588387, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
       propertyPath: m_Name
       value: FireCan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583026667855944793, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
@@ -1560,6 +1652,10 @@ PrefabInstance:
     - target: {fileID: 4407683308133600933, guid: 16e32ededb907f34d92105e93eec532a, type: 3}
       propertyPath: m_Name
       value: polySurface453 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407683308133600933, guid: 16e32ededb907f34d92105e93eec532a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4412722703619521043, guid: 16e32ededb907f34d92105e93eec532a, type: 3}
       propertyPath: m_RootOrder
@@ -1663,9 +1759,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4582791446301588387, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
       propertyPath: m_Name
       value: FireCan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583026667855944793, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
@@ -1729,6 +1837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface455 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5105271922023912676, guid: 9501759c5d9551a43bc302dd56fcd697, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9501759c5d9551a43bc302dd56fcd697, type: 3}
 --- !u!4 &4014449364882116 stripped
@@ -1791,6 +1903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface453 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5195661066679328962, guid: 325272584c678744eb77837b3df85000, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 325272584c678744eb77837b3df85000, type: 3}
 --- !u!4 &4360158774626474 stripped
@@ -1808,6 +1924,10 @@ PrefabInstance:
     - target: {fileID: 6318769356336169204, guid: 0c37c027a3abe4a44a080eaf80eefc9f, type: 3}
       propertyPath: m_Name
       value: polySurface197 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318769356336169204, guid: 0c37c027a3abe4a44a080eaf80eefc9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6321693171865293002, guid: 0c37c027a3abe4a44a080eaf80eefc9f, type: 3}
       propertyPath: m_RootOrder
@@ -1911,9 +2031,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7632071322476139225, guid: 59c2bedd68fd582418a0db851bf3162e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7632123364702167589, guid: 59c2bedd68fd582418a0db851bf3162e, type: 3}
       propertyPath: m_Name
       value: mazeWall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632123364702167589, guid: 59c2bedd68fd582418a0db851bf3162e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59c2bedd68fd582418a0db851bf3162e, type: 3}
@@ -1973,9 +2101,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4582791446301588387, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
       propertyPath: m_Name
       value: FireCan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583026667855944793, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
@@ -1994,6 +2134,10 @@ PrefabInstance:
     - target: {fileID: 8018199893579021281, guid: 2050d3f8a1209044a8c8bc6fc260f279, type: 3}
       propertyPath: m_Name
       value: polySurface453 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018199893579021281, guid: 2050d3f8a1209044a8c8bc6fc260f279, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8020175658347222951, guid: 2050d3f8a1209044a8c8bc6fc260f279, type: 3}
       propertyPath: m_RootOrder
@@ -2057,6 +2201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface474 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8154682133236376691, guid: 3f9786ed7886bdc4cb22bcf653016e76, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8160106069732656805, guid: 3f9786ed7886bdc4cb22bcf653016e76, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2118,6 +2266,10 @@ PrefabInstance:
     - target: {fileID: 8734460897426267218, guid: 9de09f54f9a6f6a4f8b9f6a88dcceb96, type: 3}
       propertyPath: m_Name
       value: polySurface471 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734460897426267218, guid: 9de09f54f9a6f6a4f8b9f6a88dcceb96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8735415874643479118, guid: 9de09f54f9a6f6a4f8b9f6a88dcceb96, type: 3}
       propertyPath: m_RootOrder

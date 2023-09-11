@@ -14,7 +14,7 @@ GameObject:
   m_TagString: MazeModule
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4286155585807662
 Transform:
@@ -54,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 49271935026865361, guid: 752378582aab4b043b7cd3c2ab4ac6a0, type: 3}
       propertyPath: m_Name
       value: polySurface287
+      objectReference: {fileID: 0}
+    - target: {fileID: 49271935026865361, guid: 752378582aab4b043b7cd3c2ab4ac6a0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 52547462229976163, guid: 752378582aab4b043b7cd3c2ab4ac6a0, type: 3}
       propertyPath: m_RootOrder
@@ -116,6 +120,10 @@ PrefabInstance:
     - target: {fileID: 171826852432132663, guid: 6a361838dcfb66e48a9252ad1357b7d7, type: 3}
       propertyPath: m_Name
       value: polySurface489 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 171826852432132663, guid: 6a361838dcfb66e48a9252ad1357b7d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 177216186553053517, guid: 6a361838dcfb66e48a9252ad1357b7d7, type: 3}
       propertyPath: m_RootOrder
@@ -223,6 +231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface489 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 359420013995603005, guid: a498b62472cb85541b71c48b5b922754, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a498b62472cb85541b71c48b5b922754, type: 3}
 --- !u!4 &4899128994935716 stripped
@@ -240,6 +252,10 @@ PrefabInstance:
     - target: {fileID: 956008835862775027, guid: 669308c2ce5e98c4580ef5459fac5415, type: 3}
       propertyPath: m_Name
       value: polySurface480 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 956008835862775027, guid: 669308c2ce5e98c4580ef5459fac5415, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 960128528202690365, guid: 669308c2ce5e98c4580ef5459fac5415, type: 3}
       propertyPath: m_RootOrder
@@ -302,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 2960185805055013312, guid: 5e9c593afdd97c8489410b7fe995b411, type: 3}
       propertyPath: m_Name
       value: Stalls02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960185805055013312, guid: 5e9c593afdd97c8489410b7fe995b411, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2963178391510512164, guid: 5e9c593afdd97c8489410b7fe995b411, type: 3}
       propertyPath: m_RootOrder
@@ -409,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface489 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3692196139057621765, guid: a27a23f2ad8e7ae4a93fd59499995f23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a27a23f2ad8e7ae4a93fd59499995f23, type: 3}
 --- !u!4 &4071618138805638 stripped
@@ -426,6 +450,10 @@ PrefabInstance:
     - target: {fileID: 4073549418491402282, guid: 7bc0ccb6e3855ee418b139d8a1d73464, type: 3}
       propertyPath: m_Name
       value: polySurface488 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073549418491402282, guid: 7bc0ccb6e3855ee418b139d8a1d73464, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4078848206911531430, guid: 7bc0ccb6e3855ee418b139d8a1d73464, type: 3}
       propertyPath: m_RootOrder
@@ -529,9 +557,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4582791446301588387, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
       propertyPath: m_Name
       value: FireCan (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582993641189337509, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583026667855944793, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fcfa278d562cf142919b370abb5e6fa, type: 3}
@@ -550,6 +590,10 @@ PrefabInstance:
     - target: {fileID: 4965444145296155588, guid: 31978205bcc2cdd4c928bf60a3b9fca8, type: 3}
       propertyPath: m_Name
       value: polySurface487 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965444145296155588, guid: 31978205bcc2cdd4c928bf60a3b9fca8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4971335649680674698, guid: 31978205bcc2cdd4c928bf60a3b9fca8, type: 3}
       propertyPath: m_RootOrder
@@ -657,6 +701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface483 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6115311662056841538, guid: 755997d5c77def74d9d9aa29277377ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755997d5c77def74d9d9aa29277377ec, type: 3}
 --- !u!4 &4312305690411694 stripped
@@ -719,6 +767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface484 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6933646015378176813, guid: b22ef2c732d12e446b6774a6a7249e64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b22ef2c732d12e446b6774a6a7249e64, type: 3}
 --- !u!4 &4849216873162842 stripped
@@ -736,6 +788,10 @@ PrefabInstance:
     - target: {fileID: 7097876055298381813, guid: 3ce1dff6f02037c40b7c78c19de98f7a, type: 3}
       propertyPath: m_Name
       value: polySurface482 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7097876055298381813, guid: 3ce1dff6f02037c40b7c78c19de98f7a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7103641207454435601, guid: 3ce1dff6f02037c40b7c78c19de98f7a, type: 3}
       propertyPath: m_RootOrder
@@ -798,6 +854,10 @@ PrefabInstance:
     - target: {fileID: 7104389130241040168, guid: b17641978b7872848b6193398e173f1a, type: 3}
       propertyPath: m_Name
       value: polySurface489 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104389130241040168, guid: b17641978b7872848b6193398e173f1a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7106009015244794450, guid: b17641978b7872848b6193398e173f1a, type: 3}
       propertyPath: m_RootOrder
